@@ -1,1 +1,90 @@
-# dituyuandaima
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pvz2-高级创作地图源代码</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: #4ade80;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .btn-play {
+            background: #4ade80;
+            color: #0f0f0f;
+        }
+        .btn-play:hover {
+            background: #22c55e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
+        }
+        .btn-download {
+            background: #3b82f6;
+            color: #fff;
+        }
+        .btn-download:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        .section-title {
+            font-size: 18px;
+            color: #ccc;
+            margin: 30px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>pvz2-高级创作地图源代码</h1>
+        <p class="subtitle">网站归太空杀124所有</p>
+
+        <div class="section-title">游玩链接</div>
+        <a href="https://tks124.github.io/pvz2/" class="btn btn-play" target="_blank">地图游玩ID</a>
+
+        <div class="section-title">地图文件下载</div>
+        <a href="./pvz2-lv1.json" class="btn btn-download" download="pvz2-lv1.json">下载 pvz2-lv1.json</a>
+        <a href="./pvz2-lv2.json" class="btn btn-download" download="pvz2-lv2.json">下载 pvz2-lv2.json</a>
+    </div>
+</body>
+</html>
