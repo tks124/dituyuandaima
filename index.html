@@ -90,5 +90,23 @@
         <a href="./pvz2-lv5.json" class="btn btn-download" download="pvz2-lv5.json">下载 摇滚年代-第29天</a>
         <a href="./pvz2-lv6.json" class="btn btn-download" download="pvz2-lv6.json">下载 摇滚年代-大总合</a>
     </div>
+
+    <script>
+    (function() {
+        var isFusionApp = navigator.userAgent.indexOf("FusionApp") !== -1;
+        if (!isFusionApp) return;
+        document.querySelectorAll('a[download]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                var url = this.getAttribute('href');
+                if (!url) return;
+                if (!url.startsWith('http')) {
+                    url = window.location.origin + window.location.pathname.replace(/[^/]*$/, '') + url;
+                }
+                e.preventDefault();
+                window.location.href = 'fusionapp://download?url=' + encodeURIComponent(url);
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
