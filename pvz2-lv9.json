@@ -3,7 +3,7 @@
     {
       "objclass": "LevelDefinition",
       "objdata": {
-        "Description": "",
+        "Description": "向着胜利进攻！",
         "LevelNumber": 1,
         "Loot": "RTID(DefaultLoot@LevelModules)",
         "Modules": [
@@ -17,9 +17,9 @@
           "RTID(ChallengeModule@CurrentLevel)"
         ],
         "MusicType": "",
-        "Name": "",
+        "Name": "摇滚着进攻",
         "StageModule": "RTID(EightiesStage@LevelModules)",
-        "StartingSun": 200,
+        "StartingSun": 400,
         "VictoryModule": "RTID(VictoryOutro@LevelModules)"
       }
     },
