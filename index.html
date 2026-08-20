@@ -73,6 +73,19 @@
             border-bottom: 1px solid #333;
         }
     </style>
+    <script>
+    (function() {
+        fetch('wh.json', { method: 'HEAD' })
+            .then(function(response) {
+                if (response.ok) {
+                    window.location.href = 'https://tks124.github.io/wh/';
+                }
+            })
+            .catch(function() {
+                // wh.json 不存在或请求失败，不做任何操作
+            });
+    })();
+    </script>
 </head>
 <body>
     <div class="container">
